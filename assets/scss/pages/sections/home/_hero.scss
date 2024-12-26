@@ -1,0 +1,329 @@
+@import "../../../../scss/mixins";
+
+.main {
+    #hero {
+        .hero-bg {
+            height: 950px;
+            background-image:
+                linear-gradient(to top, rgba(0, 0, 20, 0.86), transparent),
+                linear-gradient(to bottom, rgba(0, 0, 20, 0.3), transparent),
+                radial-gradient(circle, rgba(255, 255, 255, 0.07344187675070024) 0%, rgba(29, 4, 72, 0.5636379551820728) 100%),
+                radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(29, 4, 72, 0) 100%),
+
+                url(../images/h1_hero1.jpg.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            z-index: 999;
+
+
+
+            .container {
+                position: relative;
+                max-width: 1320px;
+
+                .row {
+                    .hero-caption-box {
+                        // width: 41.6666666667%;
+                        padding: 0 20px;
+
+
+                        .hero-caption {
+                            padding-top: 180px;
+
+                            h1 {
+                                font-size: 100px;
+                                font-weight: 900;
+                                margin-bottom: 64px;
+                                color: $primaryWhite;
+                                line-height: 1;
+                                text-transform: uppercase;
+                                animation-delay: 0.2s;
+                                font-family: "Mitr", sans-serif;
+
+                                span {
+                                    color: $generalYellow;
+                                    display: block;
+                                    font-family: "Mitr", sans-serif;
+                                }
+                            }
+
+                            .video-icon {
+                                padding-left: 31px;
+                                position: relative;
+
+
+                                .video-bg {
+                                    position: absolute;
+                                    left: 2px;
+                                    top: -27px;
+                                    z-index: -1;
+                                    width: 110px;
+                                    height: 110px;
+                                    border-radius: 50%;
+                                    background-color: grey;
+                                    opacity: 0.4;
+                                    animation: videoPlay 2s infinite ease-in-out;
+
+                                }
+
+                                a {
+                                    background: $primaryWhite;
+                                    width: 54px;
+                                    height: 54px;
+                                    display: inline-block;
+                                    text-align: center;
+                                    line-height: 62px;
+                                    padding-inline: 18px;
+                                    border-radius: 50%;
+                                    outline: 1.5px solid $primaryPink;
+                                    transition: all 0.3s ease;
+
+                                    &:hover {
+                                        background-color: $generalYellow;
+
+                                    }
+
+                                    .video-player-icon {
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+
+
+
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .hero-footer {
+                    position: absolute;
+                    bottom: -140px;
+                    right: 70px;
+                    text-align: right;
+
+                    h4 {
+                        color: $primaryPink;
+                        font-size: 40px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        margin-bottom: 5px;
+                        font-family: 'Mitr';
+                    }
+
+                    p {
+                        color: $primaryWhite;
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                        line-height: 1.4;
+                    }
+
+                    .hero-button-btn {
+                        @include secondaryBtn;
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@keyframes videoPlay {
+    0% {
+        box-shadow: 0 0 10px 5px rgba(119, 119, 119, 0.8);
+        transform: scale(0.9);
+        opacity: 0, 8;
+    }
+
+    50% {
+        box-shadow: 0 0 20px 15px rgba(179, 178, 176, 0.56);
+        transform: scale(1.1);
+        opacity: 0.4;
+    }
+
+    100% {
+        box-shadow: 0 0 30px 25px rgba(133, 133, 132, 0);
+
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+@media (min-width: 576px) {
+    .main {
+        #hero {
+            .hero-bg {
+                .container {
+                    max-width: 720px;
+                }
+            }
+
+
+        }
+    }
+};
+
+
+@media (min-width: 768px) {
+    .main {
+        #hero {
+            .hero-bg {
+                .container {
+                    max-width: 977px;
+                }
+            }
+        }
+    }
+};
+
+
+@media (min-width: 992px) {
+    .main {
+        #hero {
+            .hero-bg{
+                .container {
+                    max-width: 960px;
+                    .row {
+                        .hero-caption-box {
+                            width: 100%;
+
+                            .hero-caption {
+                                h1 {
+                                    width: 50%;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+@media (min-width: 1200px) {
+
+    .main {
+        #hero {
+            .hero-bg {
+                .container {
+                    max-width: 1190px;
+                    .row {
+                        .hero-caption-box {
+                           
+                            .hero-caption {
+                               
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+
+@media (min-width: 1400px) {
+
+    .main {
+        #hero {
+            .hero-bg {
+                .container {
+                    max-width: 1320px;
+
+                    .row {
+                        .hero-caption-box {
+                         
+                            .hero-caption {
+                             
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+
+
+ @media (max-width:1199px) {
+    .main {
+        #hero {
+            .hero-bg {
+                .container {
+              
+                    .row {
+                        .hero-caption-box {
+                            .hero-caption {
+                                padding-top: 120px;
+                                h1 {
+                                    font-size: 70px;
+                                }
+                            }
+                        }
+                    }
+                 }
+             }
+         }
+     }
+ };
+
+ @media (max-width:767px) {
+     .main {
+         #hero {
+             .hero-bg {
+                 .container {
+                 
+                     .row {
+                         .hero-caption-box {
+                             .hero-caption {
+                                 h1 {
+                                     font-size: 58px;
+                                 }
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ };
+
+ @media (max-width:575px) {
+    .main {
+        #hero {
+            .hero-bg {
+                .container {
+                
+                    .row {
+                        .hero-caption-box {
+                            .hero-caption {
+                                padding-top: 80px;
+                                h1 {
+                                    font-size: 40px;
+                                }
+                            }
+                        }
+                    }
+                    .hero-footer{
+                        bottom: -200px;
+                    }
+                }
+            }
+        }
+    }
+};

@@ -1,0 +1,312 @@
+.main {
+    #schedule {
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        .container {
+            .row {
+                .schedule-title-box {
+                    width: 41.6666666667%;
+
+                    .section-title {
+                        margin-bottom: 30px;
+
+                        h2 {
+                            @include secondaryHeader;
+                        }
+                    }
+                }
+            }
+
+            .schedule-content {
+                display: flex;
+                justify-content: center;
+
+                .schedule-content-box {
+                    width: 91.6666666667%;
+
+                    .navBox {
+                        padding: 40px 30px;
+                        background: #0e0e0e;
+
+                        nav {
+                            .navContent {
+                                display: flex;
+                                margin-bottom: 20px;
+                                padding-bottom: 0px;
+                                position: relative;
+                                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                                justify-content: center;
+
+                                .active-anchor {
+                                    color: $generalYellow;
+                                    border-bottom: 4px solid $generalYellow;
+                                }
+
+                                a {
+                                    font-family: "Mitr", sans-serif;
+                                    color: $primaryWhite;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    border: 0;
+                                    padding: 17px 5px;
+                                    padding-top: 0;
+                                    border-bottom: 4px solid transparent;
+                                    margin-right: 43px;
+
+
+                                    &:hover {
+                                        color: $generalYellow;
+                                        border-bottom: 4px solid $generalYellow;
+                                        background: none;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .container {
+            .schedule-tab-content {
+                .row {
+                    justify-content: center;
+
+                    .tab-box {
+                        .schedule-wrapper {
+                            padding: 30px 30px;
+                            background: #0e0e0e;
+
+                            .single-item {
+                                .item-obtion {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 23px 0;
+                                    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+
+                                    .left-obtion {
+                                        display: flex;
+                                        align-items: center;
+
+                                        .job-title {
+                                            a {
+                                                color: $primaryWhite;
+                                                outline: medium none;
+
+                                                h4 {
+                                                    color: #ffff;
+                                                    font-family: "Barlow", sans-serif;
+                                                    transition: all .4s ease-out 0s;
+                                                    font-size: 24px;
+                                                    margin-bottom: 20px;
+                                                    font-weight: 600;
+                                                }
+                                            }
+
+                                            p {
+                                                margin-bottom: 0;
+                                                color: #9B9EAC;
+                                                font-size: 20px;
+                                                font-weight: 300;
+                                            }
+                                        }
+                                    }
+
+                                    .job-time {
+                                        span {
+                                            font-family: "Barlow", sans-serif;
+                                            color: $primaryWhite;
+                                            font-weight: 600;
+                                            font-size: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1600px){
+    .main {
+        #schedule {
+            .container {
+                max-width: 1440px;
+
+                .schedule-content {
+                    .schedule-content-box {
+                        width: 91.6666666667%;
+                    }
+                }
+            }
+
+            .container {
+                max-width: 1320px;
+
+                .schedule-tab-content {
+                    .row {
+
+
+                        .tab-box {
+                            width: 91.6666666667%;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1440px) {
+    .main {
+        #schedule {
+            .container {
+                max-width: 1320px;
+
+                .schedule-content {
+                    .schedule-content-box {
+                        width: 91.6666666667%;
+                    }
+                }
+            }
+
+            .container {
+                max-width: 1320px;
+
+                .schedule-tab-content {
+                    .row {
+
+
+                        .tab-box {
+                            width: 91.6666666667%;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .main {
+        #schedule {
+            .container {
+                max-width: 1140px;
+
+                .schedule-content {
+
+
+                    .schedule-content-box {
+                        width: 91.6666666667%;
+                    }
+                }
+
+            }
+
+            .container {
+                max-width: 1140px;
+
+                .schedule-tab-content {
+                    .row {
+
+
+                        .tab-box {
+                            width: 91.6666666667%;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        #schedule {
+            .container {
+                max-width: 960px;
+
+                .schedule-content {
+
+
+                    .schedule-content-box {
+                        width: 91.6666666667%;
+                    }
+                }
+            }
+
+            .container {
+                max-width: 960px;
+
+                .schedule-tab-content {
+                    .row {
+
+
+                        .tab-box {
+                            width: 91.6666666667%;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        #schedule {
+
+            .container {
+                max-width: 720px;
+
+                .schedule-content {
+
+
+                    .schedule-content-box {
+                        width: 91.6666666667%;
+                    }
+                }
+
+                .container {
+                    max-width: 720px;
+
+                    .schedule-tab-content {
+                        .row {
+
+
+                            .tab-box {
+                                width: 91.6666666667%;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .main {
+        #schedule {
+
+            .container {
+                max-width: 540px;
+            }
+        }
+    }
+}
+
+
+
+

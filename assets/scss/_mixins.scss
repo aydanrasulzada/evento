@@ -1,0 +1,107 @@
+@mixin primaryBtn {
+    border: 1px solid transparent;
+    background: $generalYellow;
+    padding: 14px 33px 14px 34px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #0B0016;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 0px;
+    transition: all 0.3s ease-out;
+
+
+
+    &:hover {
+        border: 1px solid $generalYellow;
+        background-color: transparent;
+        color: $generalYellow ;
+    }
+}
+
+
+@mixin secondaryBtn {
+    color: $generalYellow;
+    border: 1px solid $generalYellow;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 32px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    background: none;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        background-color: $generalYellow;
+        border: 1px solid $generalYellow;
+        color: $primaryWhite;
+    }
+}
+
+
+@mixin secondaryHeader {
+    color: $primaryWhite;
+    font-family: "Mitr", sans-serif;
+    font-size: 50px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+
+}
+
+@mixin captionHeader {
+    text-transform: uppercase;
+    color: $primaryWhite;
+    font-size: 70px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: "Mitr", sans-serif;
+}
+
+
+
+@mixin eventoIcon {
+    padding: 7px;
+    box-shadow: 2px -2px #fff inset;
+    transform: rotate(130deg);
+    opacity: 0;
+    position: absolute;
+}
+
+
+@mixin formBox {
+    border: 1px solid #e5e6e9;
+    border-radius: 0px;
+    height: 48px;
+    padding-left: 18px;
+    font-size: 13px;
+    background: transparent;
+    color: $primaryWhite;
+}
+
+@mixin contactHover {
+    &:hover {
+        color: $generalYellow;
+    }
+
+}
+
+
+@mixin swiperAngle {
+    position: absolute;
+    color: $primaryPink;
+  opacity: 0.4;
+  &:hover{
+    color: $primaryPink;
+    opacity: 1;
+  }
+
+    &::after {
+        font-size: 20px;
+    }
+}

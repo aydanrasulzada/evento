@@ -1,0 +1,213 @@
+@import "../../../mixins";
+
+.main {
+    #get-in-touch-form {
+        .container {
+            .form-title {
+                h2 {
+                    font-size: 27px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    color: $primaryWhite;
+                    font-family: "Mitr";
+                }
+            }
+
+            .contact-box {
+                display: flex;
+                width: 100%;
+
+                .form-box {
+                    width: 60%;
+
+                    form {
+                        .form-elements {
+                            margin-bottom: 18px;
+                        }
+
+                        .textarea-box {
+
+                            .textarea {
+                                border: 1px solid #e5e6e9;
+                                width: 100%;
+                                padding-left: 18px;
+                                font-size: 13px;
+                                background: transparent;
+                                padding: 12px 6px;
+
+                                color: $primaryWhite;
+                            }
+
+                            #message {
+
+                                height: 200px;
+                            }
+                        }
+
+                        .self-info-box {
+                            width: 100%;
+
+                            input {
+                                @include formBox;
+
+                            }
+
+                            .name-form {
+                                width: 49%;
+                                margin-right: 11px;
+                            }
+
+                            .email-form {
+                                width: 49%
+                            }
+                        }
+
+                        .subject-box {
+                            input {
+                                @include formBox;
+                                width: 100%;
+                            }
+                        }
+
+                        .button-box {
+                            margin-top: 30px;
+
+                            .form-btn {
+
+                                @include primaryBtn;
+                            }
+                        }
+
+                        .self-area-box {
+                            input {
+                                @include formBox;
+                            }
+                        }
+                    }
+                }
+
+                .general-info {
+                    width: 33%;
+                    margin-left: 9%;
+
+                    .contact-item {
+                        margin-bottom: 25px;
+                        display: flex;
+                        gap: 18px;
+
+                        .contact-info-icon {
+                            img {
+                                width: 28px;
+                                padding-top: 10px;
+                            }
+                        }
+
+                        .contact-info-details {
+
+                            address {
+                                font-style: normal;
+                                color: $primaryWhite;
+                                font-family: "Mitr", sans-serif;
+                                @include contactHover;
+
+                            }
+
+                            a {
+                                color: $primaryWhite;
+                                margin-bottom: 0;
+                                font-family: "Mitr", sans-serif;
+                                transition: 0.2s all ease-in;
+                                @include contactHover;
+
+                            }
+
+                            p {
+                                font-family: "Barlow", sans-serif;
+                                line-height: 30px;
+                                margin-bottom: 15px;
+                                font-weight: normal;
+                                line-height: 1.4;
+                                color: $primaryWhite;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .main {
+        #get-in-touch-form {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        #get-in-touch-form {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+
+    }
+}
+
+@media (min-width: 992px) {
+    .main {
+        #get-in-touch-form {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .main {
+        #get-in-touch-form {
+            .container {
+                max-width: 1190px;
+
+                .contact-box {
+                    width: 100%;
+
+                    .form-box {
+                        width: 70%;
+                    }
+                    .general-info{
+                        width: 23%;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (min-width: 1400px) {
+    .main {
+        #get-in-touch-form {
+            .container {
+                max-width: 1320px;
+                padding: 30px;
+            }
+        }
+
+
+    }
+}

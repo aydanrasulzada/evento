@@ -1,0 +1,245 @@
+@import "../../../mixins";
+
+.main {
+  #speakers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    .container {
+      .row {
+        .speakers-header {
+          width: 100%;
+          padding-inline: 6px;
+
+          .speakers-top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+
+            h2 {
+              @include secondaryHeader;
+            }
+
+            a {
+              @include secondaryBtn();
+            }
+          }
+        }
+      }
+
+      .swiper-box {
+        position: relative;
+        justify-content: center;
+
+
+        .swiper-button-prev {
+          @include swiperAngle;
+          left: 70px;
+
+        }
+
+        .swiper-button-next {
+          @include swiperAngle;
+          right: 70px;
+
+        }
+
+        .swiper {
+
+          width: 80%;
+
+
+          .swiper-wrapper {
+
+            .swiper-slide {
+              .slide-img {
+
+                margin-bottom: 19px;
+                img{
+                  width: 350px;
+                  height: 330px;
+                }
+              }
+
+              .slide-img-content {
+                .person-info {
+                  h3 {
+                    margin-bottom: 3px;
+
+                    a {
+                      color: $generalYellow;
+                      font-weight: 600;
+                      font-size: 24px;
+                      font-family: "Mitr", sans-serif;
+                      font-weight: 500;
+                    }
+                  }
+
+                  p {
+                    font-family: "Barlow", sans-serif;
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                    line-height: 1.2;
+                    color: $primaryWhite;
+                    margin-bottom: 19px;
+
+                    span {
+                      color: #9B9EAC;
+                      font-size: 20px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+
+        }
+
+      }
+
+
+
+
+    }
+
+
+
+
+  }
+}
+
+
+@media (min-width: 576px) {
+  .main {
+    #speakers {
+      .container {
+        max-width: 720px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    #speakers {
+      .container {
+        max-width: 720px;
+      }
+    }
+
+
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    #speakers {
+      .container {
+        max-width: 960px;
+        padding: 30px;
+      }
+
+      .swiper-box {
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+             
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1399px) {
+  .main {
+    #speakers {
+      .container {
+     
+        padding: 30px;
+      }
+
+      .swiper-box {
+        .swiper {
+          .swiper-wrapper {
+        
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    #speakers {
+      .container {
+        max-width: 1190px;
+        padding: 30px;
+        .swiper-box{
+          .swiper{
+            .swiper-wrapper{
+              .swiper-slide{
+                .slide-img{
+                  img{
+                    width: 285px;
+                    height: 281px;
+                  }
+                }
+              }
+            }
+          }
+          }
+
+      }
+
+
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .main {
+    #speakers {
+      .container {
+        max-width: 1320px;
+     
+        .row{
+          max-width: 1200px;
+        }
+        .swiper-box{
+          max-width: 1200px;
+          padding: 0 53px;
+          .swiper-button-prev{
+            left: -40px;
+          }
+          .swiper-button-next{
+right: 0px;
+          }
+        .swiper{
+          width: 100%;
+          .swiper-wrapper{
+            .swiper-slide{
+              .slide-img{
+                img{
+                  width: 335px;
+                  height: 330px;
+                }
+              }
+            }
+          }
+        }
+        }
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,105 @@
+.main {
+    #maps {
+        position: relative;
+
+        .map_area {
+           
+            overflow: hidden;
+            padding-bottom: 50%;
+            position: relative;
+            // iframe{
+            //     height: 100%;
+            //     width: 100%;
+            //     left: 0;
+            //     top: 0;
+            //     position: absolute;
+            // }
+        }
+
+        .map-notifi-box {
+            background-color: $primaryWhite;
+            font-weight: 500;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            top: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            border-radius: 5px;
+            left: 50%;
+            max-width: 375px;
+            position: absolute;
+            transform: translateX(-50%);
+            width: calc(100% - 10px);
+            z-index: 1;
+
+            .map-logo {
+                height: 17px;
+                width: 52px;
+            }
+
+            .warning-info {
+                line-height: 20px;
+                margin: 15px 0px;
+
+                span {
+                    color: rgba(0, 0, 0, 0.87);
+                    font-size: 14px;
+                }
+            }
+
+            .other-info {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    a {
+                        color: rgba(0, 0, 0, 0.54);
+                        font-size: 12px;
+                    }
+                }
+
+                .map-confirm-btn {
+                    background-color: $primaryWhite;
+                    border: 1px solid #dadce0;
+                    color: #1a73e8;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    height: 36px;
+                    cursor: pointer;
+                    padding: 0 24px;
+                    transition: all .3s ease-out 0s;
+
+                    &:hover{
+                        color: $primaryWhite;
+                        background-color: $generalYellow;
+
+                    }
+                }
+            }
+        }
+
+        .full-screen-button {
+            background: none rgb(255, 255, 255);
+            border: 0px;
+            margin: 10px;
+
+            position: absolute;
+            cursor: pointer;          
+            border-radius: 2px;
+            height: 40px;
+            width: 40px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+            overflow: hidden;
+            top: 0px;
+            right: 0px;
+
+            img {
+                 height: 18px; 
+                width: 18px;
+                position: relative;
+                top: 1px;
+                right: 0.5px;
+            }
+        }
+    }
+}

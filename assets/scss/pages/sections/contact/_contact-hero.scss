@@ -1,0 +1,119 @@
+@import "../../../mixins";
+
+.main {
+    #hero {
+        .bg-area {
+            background-image: url(../images/h2_hero1.jpg.webp);
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 0;
+
+            &::before {
+                background: linear-gradient(to bottom, rgba(11, 0, 21, 0.7) 0%, rgba(10, 0, 23, 0.48) 25%, rgba(12, 0, 21, 0.42) 32%, rgba(10, 0, 23, 0.38) 36%, rgba(13, 0, 22, 0.32) 43%, rgba(9, 0, 22, 0.31) 44%, rgba(10, 0, 20, 0.29) 46%, rgba(12, 0, 24, 0.26) 50%, rgba(12, 0, 24, 0.25) 51%, rgba(10, 0, 24, 0.3) 54%, rgba(12, 0, 21, 0.33) 56%, rgba(10, 0, 23, 0.39) 60%, rgba(12, 0, 21, 0.42) 62%, rgba(10, 0, 23, 0.48) 66%, rgba(12, 0, 21, 0.51) 68%, rgba(10, 0, 23, 0.57) 72%, rgba(12, 0, 21, 0.6) 74%, #0b0016 100%);
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+            }
+
+            .container {
+                .row {
+                    justify-content: left;
+
+                    .captionBox {
+                        .hero-caption {
+                            margin-top: 0px;
+
+                            h2 {
+                                @include captionHeader;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .main {
+        #hero {
+            .bg-area {
+             .container {
+                    max-width: 720px;
+                }
+                }
+               
+            }
+        }
+    }
+
+
+@media (min-width: 768px) {
+    .main {
+        #hero {
+            .bg-area {
+                .container {
+                    max-width: 880px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    .main {
+        #hero {
+            .bg-area {
+                .container {
+                    max-width: 960px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+
+    .main {
+        #hero {
+            .bg-area {
+                .container {
+                    max-width: 1140px;
+                }
+            }
+        }
+    }
+};
+
+
+@media (min-width: 1400px) {
+
+    .main {
+        #hero {
+            .bg-area {
+                .container {
+                    max-width: 1320px;
+
+                    .row {
+                        .captionBox {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
