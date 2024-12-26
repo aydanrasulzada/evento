@@ -2,6 +2,8 @@
 
 .main {
     #get-in-touch-form {
+        padding: 130px 0 100px;
+
         .container {
             .form-title {
                 h2 {
@@ -188,7 +190,8 @@
                     .form-box {
                         width: 70%;
                     }
-                    .general-info{
+
+                    .general-info {
                         width: 23%;
                     }
                 }
@@ -203,8 +206,14 @@
     .main {
         #get-in-touch-form {
             .container {
+                width: 100%;
                 max-width: 1320px;
                 padding: 30px;
+
+                .form-title {
+                    width: 70%;
+                }
+                .contact-box{}
             }
         }
 

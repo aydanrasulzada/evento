@@ -132,26 +132,28 @@
     }
 }
 
-@media (max-width:1600px){
+@media (max-width:1600px) {
     .main {
         #schedule {
             .container {
                 max-width: 1440px;
-.row{
-    width: 100%;
- .schedule-title-box{
-    width: 91%;
- }
-}
+
+                .row {
+                    width: 100%;
+
+                    .schedule-title-box {
+                        width: 91%;
+                    }
+                }
+
                 .schedule-content {
                     .schedule-content-box {
                         width: 91.6666666667%;
                     }
                 }
-            }
+            
 
-            .container {
-                max-width: 1320px;
+          
 
                 .schedule-tab-content {
                     .row {
@@ -168,6 +170,7 @@
     }
 }
 
+
 @media (max-width:1440px) {
     .main {
         #schedule {
@@ -179,11 +182,9 @@
                         width: 91.6666666667%;
                     }
                 }
-            }
+            
 
-            .container {
-                max-width: 1320px;
-
+            
                 .schedule-tab-content {
                     .row {
 
@@ -204,8 +205,9 @@
         #schedule {
             .container {
                 max-width: 1140px;
-                .row{
-                    .schedule-title-box{
+
+                .row {
+                    .schedule-title-box {
                         max-width: 1140px;
                     }
                 }
@@ -217,11 +219,6 @@
                         width: 91.6666666667%;
                     }
                 }
-
-            }
-
-            .container {
-                max-width: 1140px;
 
                 .schedule-tab-content {
                     .row {
@@ -253,9 +250,6 @@
                 }
             }
 
-            .container {
-                max-width: 960px;
-
                 .schedule-tab-content {
                     .row {
 
@@ -269,16 +263,12 @@
             }
         }
     }
-}
+
 
 
 @media (max-width: 768px) {
     .main {
         #schedule {
-
-            .container {
-                max-width: 720px;
-
                 .schedule-content {
 
 
@@ -304,7 +294,7 @@
             }
         }
     }
-}
+
 
 @media (max-width: 576px) {
     .main {
@@ -316,7 +306,3 @@
         }
     }
 }
-
-
-
-

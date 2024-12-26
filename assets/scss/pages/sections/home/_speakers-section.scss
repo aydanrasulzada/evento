@@ -32,17 +32,14 @@
         position: relative;
         justify-content: center;
 
-
         .swiper-button-prev {
           @include swiperAngle;
           left: 70px;
-
         }
 
         .swiper-button-next {
           @include swiperAngle;
           right: 70px;
-
         }
 
         .swiper {
@@ -53,14 +50,45 @@
           .swiper-wrapper {
 
             .swiper-slide {
-              
-              .slide-img {
+              &:hover {
+                .slide-img {
+                  @include social-visibility-hover;
+                }
+              }
 
+              .slide-img {
+                overflow: hidden;
                 margin-bottom: 19px;
+                position: relative;
+
 
                 img {
-                  width: 350px;
-                  height: 330px;
+                  width: 100%;
+                  transition: all 0.6s ease-out 0s;
+                }
+
+                .team-social {
+                  position: absolute;
+                  bottom: 22px;
+                  left: 0;
+                  right: 0;
+
+
+                  .team-social-list {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+
+                    .team-social-item {
+
+                      a {
+                        @include social-icon-style;
+
+                      }
+
+                    }
+                  }
                 }
               }
 
@@ -68,6 +96,7 @@
                 .person-info {
                   h3 {
                     margin-bottom: 3px;
+              
 
                     a {
                       color: $generalYellow;
@@ -75,6 +104,12 @@
                       font-size: 24px;
                       font-family: "Mitr", sans-serif;
                       font-weight: 500;
+                      transition: all .3s ease-out 0s;
+                      &:hover{
+                        color: $primaryPink;
+                        
+                      }
+                     
                     }
                   }
 
@@ -109,6 +144,26 @@
 
 
 
+  }
+}
+
+@media  (max-width: 576px){
+  .main {
+    #speakers {
+      .container {
+        .row{
+          .speakers-header{
+            .speakers-top-content{
+              display: flex;
+              flex-direction: column;
+              h2{
+               font-size:24px ; 
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

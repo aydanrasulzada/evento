@@ -164,6 +164,8 @@
     .main {
         #hero {
             .hero-bg {
+
+
                 .container {
                     max-width: 720px;
                 }
@@ -172,28 +174,34 @@
 
         }
     }
-};
+}
+
+;
 
 
 @media (min-width: 768px) {
     .main {
         #hero {
             .hero-bg {
+
                 .container {
                     max-width: 977px;
                 }
             }
         }
     }
-};
+}
+
+;
 
 
 @media (min-width: 992px) {
     .main {
         #hero {
-            .hero-bg{
+            .hero-bg {
                 .container {
                     max-width: 960px;
+
                     .row {
                         .hero-caption-box {
                             width: 100%;
@@ -210,7 +218,9 @@
             }
         }
     }
-};
+}
+
+;
 
 @media (min-width: 1200px) {
 
@@ -219,12 +229,11 @@
             .hero-bg {
                 .container {
                     max-width: 1190px;
+
                     .row {
                         .hero-caption-box {
-                           
-                            .hero-caption {
-                               
-                            }
+
+                            .hero-caption {}
 
                         }
                     }
@@ -232,7 +241,9 @@
             }
         }
     }
-};
+}
+
+;
 
 
 @media (min-width: 1400px) {
@@ -245,10 +256,8 @@
 
                     .row {
                         .hero-caption-box {
-                         
-                            .hero-caption {
-                             
-                            }
+
+                            .hero-caption {}
 
                         }
                     }
@@ -256,74 +265,85 @@
             }
         }
     }
-};
+}
+
+;
 
 
 
- @media (max-width:1199px) {
+@media (max-width:1199px) {
     .main {
         #hero {
             .hero-bg {
                 .container {
-              
+
                     .row {
                         .hero-caption-box {
                             .hero-caption {
                                 padding-top: 120px;
+
                                 h1 {
                                     font-size: 70px;
                                 }
                             }
                         }
                     }
-                 }
-             }
-         }
-     }
- };
+                }
+            }
+        }
+    }
+}
 
- @media (max-width:767px) {
-     .main {
-         #hero {
-             .hero-bg {
-                 .container {
-                 
-                     .row {
-                         .hero-caption-box {
-                             .hero-caption {
-                                 h1 {
-                                     font-size: 58px;
-                                 }
-                             }
-                         }
-                     }
-                 }
-             }
-         }
-     }
- };
+;
 
- @media (max-width:575px) {
+@media (max-width:767px) {
     .main {
         #hero {
             .hero-bg {
                 .container {
-                
+
+                    .row {
+                        .hero-caption-box {
+                            .hero-caption {
+                                h1 {
+                                    font-size: 58px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+;
+
+@media (max-width:575px) {
+    .main {
+        #hero {
+            .hero-bg {
+                .container {
+
                     .row {
                         .hero-caption-box {
                             .hero-caption {
                                 padding-top: 80px;
+
                                 h1 {
                                     font-size: 40px;
                                 }
                             }
                         }
                     }
-                    .hero-footer{
+
+                    .hero-footer {
                         bottom: -200px;
                     }
                 }
             }
         }
     }
-};
+}
+
+;
