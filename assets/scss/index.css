@@ -1095,6 +1095,11 @@ body {
     height: 330px;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .main #speakers .container .row .speakers-header .speakers-top-content h2 {
+    font-size: 40px;
+  }
+}
 .main #citywide .container .row .citywide-left {
   width: 56%;
   padding-inline: 16px;
@@ -1340,6 +1345,12 @@ body {
   .main #schedule .container {
     max-width: 1440px;
   }
+  .main #schedule .container .row {
+    width: 100%;
+  }
+  .main #schedule .container .row .schedule-title-box {
+    width: 91%;
+  }
   .main #schedule .container .schedule-content .schedule-content-box {
     width: 91.6666666667%;
   }
@@ -1366,6 +1377,9 @@ body {
 }
 @media (max-width: 1200px) {
   .main #schedule .container {
+    max-width: 1140px;
+  }
+  .main #schedule .container .row .schedule-title-box {
     max-width: 1140px;
   }
   .main #schedule .container .schedule-content .schedule-content-box {
