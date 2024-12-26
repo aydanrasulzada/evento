@@ -53,10 +53,12 @@
           .swiper-wrapper {
 
             .swiper-slide {
+              
               .slide-img {
 
                 margin-bottom: 19px;
-                img{
+
+                img {
                   width: 350px;
                   height: 330px;
                 }
@@ -144,9 +146,7 @@
       .swiper-box {
         .swiper {
           .swiper-wrapper {
-            .swiper-slide {
-             
-            }
+            .swiper-slide {}
           }
         }
       }
@@ -160,15 +160,13 @@
   .main {
     #speakers {
       .container {
-     
+
         padding: 30px;
       }
 
       .swiper-box {
         .swiper {
-          .swiper-wrapper {
-        
-          }
+          .swiper-wrapper {}
         }
       }
     }
@@ -183,12 +181,13 @@
       .container {
         max-width: 1190px;
         padding: 30px;
-        .swiper-box{
-          .swiper{
-            .swiper-wrapper{
-              .swiper-slide{
-                .slide-img{
-                  img{
+
+        .swiper-box {
+          .swiper {
+            .swiper-wrapper {
+              .swiper-slide {
+                .slide-img {
+                  img {
                     width: 285px;
                     height: 281px;
                   }
@@ -196,7 +195,7 @@
               }
             }
           }
-          }
+        }
 
       }
 
@@ -210,36 +209,64 @@
     #speakers {
       .container {
         max-width: 1320px;
-     
-        .row{
+
+        .row {
           max-width: 1200px;
         }
-        .swiper-box{
+
+        .swiper-box {
           max-width: 1200px;
           padding: 0 53px;
-          .swiper-button-prev{
+
+          .swiper-button-prev {
             left: -40px;
           }
-          .swiper-button-next{
-right: 0px;
+
+          .swiper-button-next {
+            right: 0px;
           }
-        .swiper{
-          width: 100%;
-          .swiper-wrapper{
-            .swiper-slide{
-              .slide-img{
-                img{
-                  width: 335px;
-                  height: 330px;
+
+          .swiper {
+            width: 100%;
+
+            .swiper-wrapper {
+              .swiper-slide {
+                .slide-img {
+                  img {
+                    width: 335px;
+                    height: 330px;
+                  }
                 }
               }
             }
           }
         }
-        }
       }
     }
 
 
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .main {
+    #speakers {
+
+      .container {
+        .row {
+          .speakers-header {
+
+
+            .speakers-top-content {
+
+
+              h2 {
+                font-size: 40px
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
