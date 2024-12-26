@@ -175,6 +175,31 @@
 
     }
 }
+@media (max-width:992px) {
+    .main {
+        #get-in-touch-form {
+            .container {
+                .contact-box{
+                    flex-direction: column;
+                    .form-box{
+                       
+                        width: 100%;
+                        form{
+                            width: 100%;
+                            .self-area-box{
+                                .name-form{
+                                  width: 48%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
 
 
 

@@ -25,10 +25,7 @@
 
                 .row {
                     .hero-caption-box {
-                        // width: 41.6666666667%;
                         padding: 0 20px;
-
-
                         .hero-caption {
                             padding-top: 180px;
 
@@ -38,9 +35,9 @@
                                 margin-bottom: 64px;
                                 color: $primaryWhite;
                                 line-height: 1;
-                                text-transform: uppercase;
-                                animation-delay: 0.2s;
+                                text-transform: uppercase;                              
                                 font-family: "Mitr", sans-serif;
+                                animation-delay: 0.2s;
 
                                 span {
                                     color: $generalYellow;
@@ -160,30 +157,16 @@
 
 
 
-@media (min-width: 576px) {
-    .main {
-        #hero {
-            .hero-bg {
 
 
-                .container {
-                    max-width: 720px;
-                }
-            }
 
 
-        }
-    }
-}
-
-;
 
 
 @media (min-width: 768px) {
     .main {
         #hero {
             .hero-bg {
-
                 .container {
                     max-width: 977px;
                 }
@@ -191,7 +174,6 @@
         }
     }
 }
-
 ;
 
 
@@ -267,83 +249,113 @@
     }
 }
 
-;
 
 
-
-@media (max-width:1199px) {
+@media (max-width:992px) {
     .main {
         #hero {
+          
             .hero-bg {
+               height: 1020px;
+               background-size: 100% 100% 100%;
                 .container {
-
                     .row {
+                     
                         .hero-caption-box {
+                           width: 0%;
                             .hero-caption {
-                                padding-top: 120px;
-
+                                padding-top: 100px;
                                 h1 {
-                                    font-size: 70px;
+                                    font-size: 75px;
                                 }
                             }
+                        }
+                    }
+                    .hero-footer {
+                        bottom: -160px;
+                        right: 45px;
+                        h4{
+                           font-size: 55px;
+                        }
+                        p{
+                           font-size: 19px;
                         }
                     }
                 }
             }
         }
     }
-}
+ };
 
-;
 
-@media (max-width:767px) {
+ @media (max-width:767px) {
     .main {
         #hero {
+          
             .hero-bg {
+               height: 500px;
+               background-size: 100% 100% 100%;
                 .container {
-
                     .row {
+                     
                         .hero-caption-box {
+                           width: 0%;
                             .hero-caption {
+                                padding-top: 100px;
                                 h1 {
-                                    font-size: 58px;
+                                    font-size: 65px;
                                 }
                             }
+                        }
+                    }
+                    .hero-footer {
+                        bottom: -160px;
+                        right: 45px;
+                        h4{
+                           font-size: 45px;
+                        }
+                        p{
+                           font-size: 18px;
                         }
                     }
                 }
             }
         }
     }
-}
-
-;
-
-@media (max-width:575px) {
+ };
+ @media (max-width:576px) {
     .main {
         #hero {
+          
             .hero-bg {
+               height: 500px;
+               background-size: 100% 50% 50% 100%;
+               background-position: center;
                 .container {
-
                     .row {
+                       margin-left: -21px;
                         .hero-caption-box {
+                           width: 20%;
                             .hero-caption {
                                 padding-top: 80px;
-
                                 h1 {
-                                    font-size: 40px;
+                                    font-size: 45px;
                                 }
                             }
                         }
                     }
-
                     .hero-footer {
-                        bottom: -200px;
+                        bottom: -160px;
+                        right: 15px;
+                        h4{
+                           font-size: 33px;
+                        }
+                        p{
+                           font-size: 14px;
+                        }
                     }
                 }
             }
         }
     }
-}
-
-;
+};

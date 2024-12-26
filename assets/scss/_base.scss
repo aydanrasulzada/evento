@@ -1,5 +1,3 @@
-
-
 @import "./mixins";
 
 @font-face {
@@ -7,10 +5,12 @@
     src: url(../fonts/Barlow/Barlow-Regular.ttf),
 
 }
+
 @font-face {
-    font-family:"BarlowMedium";
+    font-family: "BarlowMedium";
     src: url(../fonts/Barlow/Barlow-Medium.ttf);
 }
+
 @font-face {
     font-family: "BarlowBold";
     src: url(../fonts/Barlow/Barlow-Bold.ttf);
@@ -20,8 +20,9 @@
     font-family: "Mitr";
     src: url(../fonts/Mitr/Mitr-SemiBold.ttf);
 }
+
 @font-face {
-    font-family:"MitrMedium" ;
+    font-family: "MitrMedium";
     src: url(../fonts/Mitr/Mitr-Medium.ttf);
 }
 
@@ -38,7 +39,7 @@
 
 .container {
     width: 100%;
- max-width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 18px;
 }
@@ -47,8 +48,8 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-   margin-left: 12px;
-   margin-right: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
 
 }
 
@@ -56,57 +57,63 @@ body {
     background: #0B0016;
 }
 
-// #main-icon{
-//     background: #FFBD00;
-//     height: 40px;
-//     width: 40px;
-//     right: 31px;
-//     bottom: 18px;
-//     position: fixed;
-//     color: #fff;
-//     font-size: 20px;
-//     text-align: center;
-//     border-radius: 50%;
-//     line-height: 40px;
-//     border: 2px solid transparent;
-//     box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
-//     z-index: 999999;
-//     .evento-icon{
-//         position: relative;
-//         .main-icon-items{
-//             position: absolute;
-//             text-align: center;
-//             bottom: -3px;
-//             margin: 0 auto;
-//             display: block;
-//             right: 7px;
-//             .angle-previous{
-//                 animation: eventoAnimation 3s ease-in-out infinite;
-//                 @include eventoIcon;
-//             }
-//             .angle-next{
-//                 animation: eventoAnimation 3s 1s ease-in-out infinite;
-//                 @include eventoIcon;
-//             }
-//         }
-//     }
-// }
+#main-icon {
+    background-color: $generalYellow;
+    height: 40px;
+    width: 40px;
+    right: 31px;
+    bottom: 18px;
+    position: fixed;
+    color: $primaryWhite;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+    z-index: 999999;
+
+    .evento-icon {
+        position: relative;
+
+        .main-icon-items {
+            position: absolute;
+            text-align: center;
+            bottom: -3px;
+            margin: 0 auto;
+            display: block;
+            right: 7px;
+
+            .angle-previous {
+                animation: eventoAnimation 3s ease-in-out infinite;
+                @include eventoIcon;
+            }
+
+            .angle-next {
+                animation: eventoAnimation 3s 1s ease-in-out infinite;
+                @include eventoIcon;
+            }
+        }
+    }
+}
 
 
 
-//Neeedd///
 
 
-// @keyframes eventoAnimation{
-//     10% {
-//         top: 15px;
-//         opacity: 0;
-//     }
-//     70% {
-//         opacity: 1;
-//     }
-//     100% {
-//         top: 0px;
-//         opacity: 0;
-//     }
-// }
+
+@keyframes eventoAnimation {
+    10% {
+        top: 15px;
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 0;
+    }
+}

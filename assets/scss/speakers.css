@@ -46,6 +46,63 @@ body {
   background: #0B0016;
 }
 
+#main-icon {
+  background-color: #FFBD00;
+  height: 40px;
+  width: 40px;
+  right: 31px;
+  bottom: 18px;
+  position: fixed;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 40px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+  z-index: 999999;
+}
+#main-icon .evento-icon {
+  position: relative;
+}
+#main-icon .evento-icon .main-icon-items {
+  position: absolute;
+  text-align: center;
+  bottom: -3px;
+  margin: 0 auto;
+  display: block;
+  right: 7px;
+}
+#main-icon .evento-icon .main-icon-items .angle-previous {
+  animation: eventoAnimation 3s ease-in-out infinite;
+  padding: 7px;
+  box-shadow: 2px -2px #fff inset;
+  transform: rotate(130deg);
+  opacity: 0;
+  position: absolute;
+}
+#main-icon .evento-icon .main-icon-items .angle-next {
+  animation: eventoAnimation 3s 1s ease-in-out infinite;
+  padding: 7px;
+  box-shadow: 2px -2px #fff inset;
+  transform: rotate(130deg);
+  opacity: 0;
+  position: absolute;
+}
+
+@keyframes eventoAnimation {
+  10% {
+    top: 15px;
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    opacity: 0;
+  }
+}
 .header {
   height: 86px;
 }
@@ -166,6 +223,12 @@ body {
   .header .header-area .main-header {
     padding: 0px 0px;
     width: 100%;
+  }
+  .header .header-area .main-header .container {
+    max-width: 500px;
+  }
+  .header .header-area .main-header .container .row {
+    margin-left: -17px;
   }
 }
 @media (min-width: 576px) {
