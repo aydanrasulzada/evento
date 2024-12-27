@@ -7,13 +7,7 @@
             overflow: hidden;
             padding-bottom: 50%;
             position: relative;
-            // iframe{
-            //     height: 100%;
-            //     width: 100%;
-            //     left: 0;
-            //     top: 0;
-            //     position: absolute;
-            // }
+           
         }
 
         .map-notifi-box {
@@ -61,7 +55,7 @@
                 .map-confirm-btn {
                     background-color: $primaryWhite;
                     border: 1px solid #dadce0;
-                    color: #1a73e8;
+                    color: $blue;
                     border-radius: 4px;
                     font-size: 14px;
                     height: 36px;

@@ -362,6 +362,9 @@ body {
   }
 }
 @media (max-width: 576px) {
+  #footer .footer-area .footer-wrapper {
+    padding: 0;
+  }
   #footer .footer-area .footer-wrapper .container {
     max-width: 960px;
   }
@@ -1042,9 +1045,6 @@ body {
   }
 }
 @media (max-width: 767px) {
-  .main #about .container .row {
-    margin-left: -60px;
-  }
   .main #about .container .row .about-left .section-title h2 {
     font-size: 31px;
   }
@@ -1221,7 +1221,11 @@ body {
     flex-direction: column;
   }
   .main #speakers .container .row .speakers-header .speakers-top-content h2 {
+    width: 100%;
     font-size: 24px;
+  }
+  .main #speakers .container .row .speakers-header .speakers-top-content .speakers-btn {
+    width: 100%;
   }
 }
 @media (min-width: 576px) {
@@ -1356,10 +1360,11 @@ body {
     max-width: 720px;
   }
   .main #citywide .container .row .citywide-left {
-    width: 68%;
+    width: 100%;
+    margin-bottom: 20px;
   }
   .main #citywide .container .row .citywide-right {
-    width: 78%;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -1400,8 +1405,18 @@ body {
   .main #citywide .container {
     max-width: 540px;
   }
+  .main #citywide .container .row {
+    width: 100%;
+  }
   .main #citywide .container .row .citywide-left {
     width: 100%;
+  }
+  .main #citywide .container .row .citywide-left .citywide-img {
+    margin-bottom: 20px;
+  }
+  .main #citywide .container .row .citywide-left .citywide-img img {
+    width: 96%;
+    height: 400px;
   }
   .main #citywide .container .row .citywide-right {
     width: 100%;
@@ -1517,7 +1532,7 @@ body {
   outline: medium none;
 }
 .main #schedule .container .schedule-tab-content .row .tab-box .schedule-wrapper .single-item .item-obtion .left-obtion .job-title a h4 {
-  color: white;
+  color: #fff;
   font-family: "Barlow", sans-serif;
   transition: all 0.4s ease-out 0s;
   font-size: 24px;
@@ -1604,6 +1619,32 @@ body {
 @media (max-width: 576px) {
   .main #schedule .container {
     max-width: 540px;
+  }
+  .main #schedule .container .schedule-content .schedule-content-box {
+    width: 100%;
+  }
+  .main #schedule .container .schedule-content .schedule-content-box .navBox nav .navContent {
+    width: 100%;
+  }
+  .main #schedule .container .schedule-content .schedule-content-box .navBox nav .navContent a {
+    font-size: 16px;
+    margin-right: 25px;
+    padding: 18px 0px;
+  }
+  .main #schedule .container .schedule-tab-content .row .tab-box {
+    width: 100%;
+  }
+  .main #schedule .container .schedule-tab-content .row .tab-box .schedule-wrapper {
+    padding: 30px 10px;
+  }
+  .main #schedule .container .schedule-tab-content .row .tab-box .schedule-wrapper .single-item .item-obtion .left-obtion .job-title a h4 {
+    font-size: 16px;
+  }
+  .main #schedule .container .schedule-tab-content .row .tab-box .schedule-wrapper .single-item .item-obtion .left-obtion .job-title p {
+    font-size: 16px;
+  }
+  .main #schedule .container .schedule-tab-content .row .tab-box .schedule-wrapper .single-item .item-obtion .job-time span {
+    font-size: 16px;
   }
 }
 .main #blog .container .row .single-blog-box {

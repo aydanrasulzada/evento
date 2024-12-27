@@ -619,6 +619,9 @@ body {
   }
 }
 @media (max-width: 576px) {
+  #footer .footer-area .footer-wrapper {
+    padding: 0;
+  }
   #footer .footer-area .footer-wrapper .container {
     max-width: 960px;
   }
@@ -822,7 +825,7 @@ body {
     width: 100%;
   }
   .main #team-area .container .row .member-box {
-    width: 100%;
+    width: 95%;
   }
 }
 @media (min-width: 576px) {
@@ -880,9 +883,6 @@ body {
     width: 33.3333%;
   }
 }
-.main #citywide {
-  padding-bottom: 120px;
-}
 .main #citywide .container .row .citywide-left {
   width: 56%;
   padding-inline: 16px;
@@ -891,7 +891,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 556px;
+  height: 610px;
 }
 .main #citywide .container .row .citywide-right {
   width: 44%;
@@ -915,6 +915,7 @@ body {
 .main #citywide .container .row .citywide-right .citywide-content .citywide-title span {
   color: #FFBD00;
   display: block;
+  font-family: "Mitr", sans-serif;
 }
 .main #citywide .container .row .citywide-right .citywide-content p {
   color: #9B9EAC;
@@ -942,15 +943,16 @@ body {
     max-width: 720px;
   }
   .main #citywide .container .row .citywide-left {
-    width: 68%;
+    width: 100%;
+    margin-bottom: 20px;
   }
   .main #citywide .container .row .citywide-right {
-    width: 78%;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
   .main #citywide .container {
-    max-width: 1140px;
+    max-width: 960px;
   }
   .main #citywide .container .row .citywide-left {
     width: 50%;
@@ -961,7 +963,7 @@ body {
 }
 @media (min-width: 1200px) {
   .main #citywide .container {
-    max-width: 1140px;
+    max-width: 1120px;
   }
   .main #citywide .container .row .citywide-left {
     width: 58%;
@@ -986,8 +988,18 @@ body {
   .main #citywide .container {
     max-width: 540px;
   }
+  .main #citywide .container .row {
+    width: 100%;
+  }
   .main #citywide .container .row .citywide-left {
     width: 100%;
+  }
+  .main #citywide .container .row .citywide-left .citywide-img {
+    margin-bottom: 20px;
+  }
+  .main #citywide .container .row .citywide-left .citywide-img img {
+    width: 96%;
+    height: 400px;
   }
   .main #citywide .container .row .citywide-right {
     width: 100%;

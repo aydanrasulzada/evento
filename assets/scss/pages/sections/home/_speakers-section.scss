@@ -99,7 +99,8 @@
                     margin-bottom: 3px;
               
 
-                    a {
+                    
+                      a {
                       color: $generalYellow;
                       font-weight: 600;
                       font-size: 24px;
@@ -112,6 +113,7 @@
                       }
                      
                     }
+                    
                   }
 
                   p {
@@ -123,7 +125,7 @@
                     margin-bottom: 19px;
 
                     span {
-                      color: #9B9EAC;
+                      color: $primaryText-grey;
                       font-size: 20px;
                     }
                   }
@@ -158,7 +160,11 @@
               display: flex;
               flex-direction: column;
               h2{
+                width: 100%;
                font-size:24px ; 
+              }
+              .speakers-btn{
+                width: 100%;
               }
             }
           }

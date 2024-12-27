@@ -619,6 +619,9 @@ body {
   }
 }
 @media (max-width: 576px) {
+  #footer .footer-area .footer-wrapper {
+    padding: 0;
+  }
   #footer .footer-area .footer-wrapper .container {
     max-width: 960px;
   }
@@ -865,6 +868,28 @@ body {
     max-width: 540px;
   }
 }
+@media (max-width: 768px) {
+  .main #get-in-touch-form .container .contact-box {
+    flex-direction: column;
+  }
+  .main #get-in-touch-form .container .contact-box .form-box {
+    width: 100%;
+  }
+  .main #get-in-touch-form .container .contact-box .form-box form {
+    width: 100%;
+  }
+  .main #get-in-touch-form .container .contact-box .form-box form .self-info-box .name-form {
+    width: 48%;
+  }
+  .main #get-in-touch-form .container .contact-box .form-box form .self-info-box .email-form {
+    width: 47%;
+  }
+  .main #get-in-touch-form .container .contact-box .general-info {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+}
 @media (min-width: 768px) {
   .main #get-in-touch-form .container {
     max-width: 720px;
@@ -886,6 +911,25 @@ body {
     width: 100%;
   }
   .main #get-in-touch-form .container .contact-box .form-box form .self-area-box .name-form {
+    width: 48%;
+  }
+  .main #get-in-touch-form .container .contact-box .general-info {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .main #get-in-touch-form .container .contact-box .form-box {
+    width: 100%;
+  }
+  .main #get-in-touch-form .container .contact-box .form-box form {
+    width: 100%;
+  }
+  .main #get-in-touch-form .container .contact-box .form-box form .self-info-box .name-form {
+    width: 49%;
+  }
+  .main #get-in-touch-form .container .contact-box .form-box form .self-info-box .email-form {
     width: 48%;
   }
 }
@@ -911,6 +955,25 @@ body {
   }
   .main #get-in-touch-form .container .form-title {
     width: 70%;
+  }
+}
+@media (max-width: 577px) {
+  .main #get-in-touch-form .container .contact-box {
+    flex-direction: column;
+  }
+  .main #get-in-touch-form .container .contact-box .form-box {
+    width: 100%;
+  }
+  .main #get-in-touch-form .container .contact-box .form-box form {
+    width: 100%;
+  }
+  .main #get-in-touch-form .container .contact-box .form-box form .self-info-box .name-form {
+    width: 47%;
+    margin-right: 10px;
+  }
+  .main #get-in-touch-form .container .contact-box .form-box form .self-info-box .email-form {
+    width: 46%;
+    margin-left: 10px;
   }
 }
 .main #maps {

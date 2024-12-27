@@ -140,11 +140,45 @@
     }
 }
 
+
 @media (min-width: 576px) {
     .main {
         #get-in-touch-form {
             .container {
                 max-width: 540px;
+            }
+        }
+
+
+    }
+}
+@media (max-width:768px) {
+    .main {
+        #get-in-touch-form {
+            .container {
+                .contact-box{
+                    flex-direction: column;
+                    .form-box{
+                       
+                        width: 100%;
+                        form{
+                            width: 100%;
+                            .self-info-box{
+                                .name-form{
+                                  width: 48%;
+                                }
+                                .email-form{
+                                    width: 47%;
+                                }
+                            }
+                        }
+                    }
+                    .general-info{
+                        width: 100%;
+                        margin-top: 40px;
+                        margin-left: 0px;
+                    }
+                }
             }
         }
 
@@ -193,6 +227,11 @@
                             }
                         }
                     }
+                    .general-info{
+                        width: 100%;
+                        margin-top: 40px;
+                        margin-left: 0px;
+                    }
                 }
             }
         }
@@ -201,7 +240,35 @@
     }
 }
 
+@media (max-width:1200px) {
+    .main {
+        #get-in-touch-form {
+            .container {
+                .contact-box{
+                   
+                    .form-box{
+                       
+                        width: 100%;
+                        form{
+                            width: 100%;
+                            .self-info-box{
+                                .name-form{
+                                  width: 49%;
+                                }
+                                .email-form{
+                                    width: 48%;
+                                }
+                            }
+                        }
+                    }
 
+                }
+            }
+        }
+
+
+    }
+}
 
 @media (min-width: 1200px) {
     .main {
@@ -243,5 +310,35 @@
         }
 
 
+    }
+}
+
+@media (max-width:577px) {
+    .main {
+        #get-in-touch-form {
+            .container {
+                .contact-box{
+                    flex-direction: column;
+                    .form-box{
+                       width: 100%;
+                        
+                        form{
+                            width: 100%;
+                            .self-info-box{
+                                .name-form{
+                                  width: 47%;
+                                  margin-right: 10px;
+                                }
+                                .email-form{
+                                    width: 46%;
+                                    margin-left: 10px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

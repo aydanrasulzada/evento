@@ -66,7 +66,7 @@
                         .counter-text {
                             p {
                                 font-family:"MitrMedium" ;
-                                color: #9B9EAC;
+                                color: $primaryText-grey;
                                 text-transform: uppercase;
                                 font-size: 18px;
                                 font-weight: 500;
@@ -269,7 +269,7 @@
         .container {
            
             .row {
-                margin-left:-60px;
+               
                 .about-left{
                    .section-title{
                     h2{
