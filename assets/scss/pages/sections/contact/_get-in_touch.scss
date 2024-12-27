@@ -152,12 +152,13 @@
 
     }
 }
-@media (max-width:768px) {
+
+@media (max-width:1200px) {
     .main {
         #get-in-touch-form {
             .container {
                 .contact-box{
-                    flex-direction: column;
+                   
                     .form-box{
                        
                         width: 100%;
@@ -166,43 +167,17 @@
                             .self-info-box{
                                 .name-form{
                                   width: 48%;
+                                  margin-right: 12px;
                                 }
                                 .email-form{
-                                    width: 47%;
+                                    width: 48%;
+                                    margin-left: 12px;
                                 }
                             }
                         }
                     }
-                    .general-info{
-                        width: 100%;
-                        margin-top: 40px;
-                        margin-left: 0px;
-                    }
+
                 }
-            }
-        }
-
-
-    }
-}
-
-@media (min-width: 768px) {
-    .main {
-        #get-in-touch-form {
-            .container {
-                max-width: 720px;
-            }
-        }
-
-
-    }
-}
-
-@media (min-width: 992px) {
-    .main {
-        #get-in-touch-form {
-            .container {
-                max-width: 960px;
             }
         }
 
@@ -239,13 +214,12 @@
 
     }
 }
-
-@media (max-width:1200px) {
+@media (max-width:768px) {
     .main {
         #get-in-touch-form {
             .container {
                 .contact-box{
-                   
+                    flex-direction: column;
                     .form-box{
                        
                         width: 100%;
@@ -253,15 +227,21 @@
                             width: 100%;
                             .self-info-box{
                                 .name-form{
-                                  width: 49%;
+                                  width: 48%;
+                                  margin-right:8px ;
                                 }
                                 .email-form{
                                     width: 48%;
+                                    margin-left:8px ;
                                 }
                             }
                         }
                     }
-
+                    .general-info{
+                        width: 100%;
+                        margin-top: 40px;
+                        margin-left: 0px;
+                    }
                 }
             }
         }
@@ -270,11 +250,36 @@
     }
 }
 
+@media (min-width: 768px) {
+    .main {
+        #get-in-touch-form {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+
+    }
+}
+
+@media (min-width: 992px) {
+    .main {
+        #get-in-touch-form {
+            .container {
+                max-width: 910px;
+            }
+        }
+
+
+    }
+}
+
+
 @media (min-width: 1200px) {
     .main {
         #get-in-touch-form {
             .container {
-                max-width: 1190px;
+                max-width: 1090px;
 
                 .contact-box {
                     width: 100%;
@@ -326,12 +331,12 @@
                             width: 100%;
                             .self-info-box{
                                 .name-form{
-                                  width: 47%;
-                                  margin-right: 10px;
+                                  width: 46%;
+                                  margin-right: 8px;
                                 }
                                 .email-form{
                                     width: 46%;
-                                    margin-left: 10px;
+                                    margin-left: 8px;
 
                                 }
                             }
