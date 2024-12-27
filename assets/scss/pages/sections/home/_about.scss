@@ -66,7 +66,7 @@
                         .counter-text {
                             p {
                                 font-family:"MitrMedium" ;
-                                color: #9B9EAC;
+                                color: $primaryText-grey;
                                 text-transform: uppercase;
                                 font-size: 18px;
                                 font-weight: 500;
@@ -94,7 +94,7 @@
     }
 };
 
-@media (min-width:768px){
+@media (min-width:767px){
     .main{
          #about  {
         .container {
@@ -115,10 +115,10 @@
     .main{
          #about  {
         .container {
-            max-width: 1140px;
+            max-width: 900px;
             .row {
                 .about-left{
-                    width: 33.3%;
+                    width: 40.3%;
                     .section-title{
                         h2{
                             width: 60%;
@@ -203,7 +203,7 @@
                 .about-left{
                    .section-title{
                     h2{
-                        width: 59.333%;
+                       
                         font-size: 30px;
                     }
                    }
@@ -254,12 +254,22 @@
     } 
 };
 
-@media only screen and (min-width: 576px) and (max-width: 767px){
+
+    
+
+
+
+
+
+
+
+@media (max-width:767px){
     .main{
         #about  {
         .container {
            
             .row {
+               
                 .about-left{
                    .section-title{
                     h2{
@@ -272,15 +282,16 @@
         }
     }
     } 
-};
 
+}
 
-@media (max-width: 575px){
+@media (max-width: 576px){
     .main{
         #about  {
         .container {
            
             .row {
+                margin-left: 0px;
                 .about-left{
                    .section-title{
                     h2{

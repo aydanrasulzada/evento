@@ -95,13 +95,62 @@
 @mixin swiperAngle {
     position: absolute;
     color: $primaryPink;
-  opacity: 0.4;
-  &:hover{
-    color: $primaryPink;
-    opacity: 1;
-  }
+    opacity: 0.4;
+    z-index: 99;
+
+    &:hover {
+        color: $primaryPink;
+        opacity: 1;
+    }
 
     &::after {
         font-size: 20px;
+    }
+}
+
+
+@mixin social-icon-style {
+
+    color: $primaryWhite;
+    background: $primaryPink;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 8px;
+    display: inline-block;
+    transform: translateY(60px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-out 0s;
+
+    &:hover {
+        background-color: $generalYellow;
+    }
+}
+
+
+@mixin social-visibility-hover {
+
+    img {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .team-social {
+        .team-social-list {
+            .team-social-item {
+                a {
+                    transform: translateY(0px);
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+            }
+        }
+
     }
 }

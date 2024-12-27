@@ -8,18 +8,26 @@
         padding-bottom: 0;
 
         .footer-wrapper {
+            padding: 0px 50px;
+            width: 100%;
             .container {
                 .row {
                     justify-content: space-between;
 
                     .bottom-logo-box {
-                        width: 25%;
+                        width: 26%;
 
                         .single-footer-caption {
                             margin-bottom: 50px;
 
                             .footer-logo {
                                 margin-bottom: 25px;
+                                a{
+                                    img{
+                                        width: 163px;
+                                        height: 50px;
+                                    }
+                                }
                             }
 
                             .footer-title {
@@ -36,7 +44,7 @@
 
                                     //burdaki rengleri sonra mixine elave ele
                                     .social-icon {
-                                        color: #fff;
+                                        color: $primaryWhite;
                                         width: 40px;
                                         height: 40px;
                                         line-height: 43px;
@@ -82,7 +90,7 @@
                     }
 
                     .bottom-contact-box {
-                        width: 25%;
+                        width: 26%;
 
                         .single-footer-caption {
                             margin-bottom: 50px;
@@ -90,7 +98,7 @@
                             h4 {
                                 color: #ffff;
                                 font-size: 24px;
-                                margin-bottom: 42px;
+                                margin-bottom: 16px;
                                 font-weight: 600;
                             }
 
@@ -145,7 +153,7 @@
                                     font-family: "Barlow", sans-serif;
                                     color: $primaryWhite;
                                     font-size: 24px;
-                                    margin-bottom: 34px;
+                                    margin-bottom: 16px;
                                     font-weight: 600;
                                 }
 
@@ -366,7 +374,7 @@
         .footer-area {
             .footer-wrapper {
                 .container {
-                    max-width: 1180px;
+                    max-width: 1120px;
 
                     .row {
                         .bottom-logo-box {
@@ -395,19 +403,19 @@
         .footer-area {
             .footer-wrapper {
                 .container {
-                    max-width: 1320px;
+                    max-width: 1280px;
 
                     .row {
                         .bottom-logo-box {
-                            width: 25%;
+                            width: 27%;
                         }
 
                         .bottom-contact-box {
-                            width: 25%;
+                            width: 27%;
                         }
 
                         .bottom-subscribe-box {
-                            width: 35%;
+                            width: 32.3%;
                         }
                     }
                 }
@@ -425,6 +433,7 @@
     #footer {
         .footer-area {
             .footer-wrapper {
+                padding: 0;
                 .container {
                     max-width: 960px;
 

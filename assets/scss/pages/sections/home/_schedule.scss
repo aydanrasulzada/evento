@@ -96,7 +96,7 @@
                                                 outline: medium none;
 
                                                 h4 {
-                                                    color: #ffff;
+                                                    color: $primaryWhite;
                                                     font-family: "Barlow", sans-serif;
                                                     transition: all .4s ease-out 0s;
                                                     font-size: 24px;
@@ -107,7 +107,7 @@
 
                                             p {
                                                 margin-bottom: 0;
-                                                color: #9B9EAC;
+                                                color: $primaryText-grey;
                                                 font-size: 20px;
                                                 font-weight: 300;
                                             }
@@ -132,26 +132,28 @@
     }
 }
 
-@media (max-width:1600px){
+@media (max-width:1600px) {
     .main {
         #schedule {
             .container {
                 max-width: 1440px;
-.row{
-    width: 100%;
- .schedule-title-box{
-    width: 91%;
- }
-}
+
+                .row {
+                    width: 100%;
+
+                    .schedule-title-box {
+                        width: 91%;
+                    }
+                }
+
                 .schedule-content {
                     .schedule-content-box {
                         width: 91.6666666667%;
                     }
                 }
-            }
 
-            .container {
-                max-width: 1320px;
+
+
 
                 .schedule-tab-content {
                     .row {
@@ -168,6 +170,7 @@
     }
 }
 
+
 @media (max-width:1440px) {
     .main {
         #schedule {
@@ -179,10 +182,8 @@
                         width: 91.6666666667%;
                     }
                 }
-            }
 
-            .container {
-                max-width: 1320px;
+
 
                 .schedule-tab-content {
                     .row {
@@ -203,9 +204,10 @@
     .main {
         #schedule {
             .container {
-                max-width: 1140px;
-                .row{
-                    .schedule-title-box{
+                max-width: 1160px;
+
+                .row {
+                    .schedule-title-box {
                         max-width: 1140px;
                     }
                 }
@@ -217,11 +219,6 @@
                         width: 91.6666666667%;
                     }
                 }
-
-            }
-
-            .container {
-                max-width: 1140px;
 
                 .schedule-tab-content {
                     .row {
@@ -253,8 +250,35 @@
                 }
             }
 
+            .schedule-tab-content {
+                .row {
+
+
+                    .tab-box {
+                        width: 91.6666666667%;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .main {
+        #schedule {
+            .schedule-content {
+
+
+                .schedule-content-box {
+                    width: 91.6666666667%;
+                }
+            }
+
             .container {
-                max-width: 960px;
+                max-width: 720px;
 
                 .schedule-tab-content {
                     .row {
@@ -272,51 +296,66 @@
 }
 
 
-@media (max-width: 768px) {
-    .main {
-        #schedule {
-
-            .container {
-                max-width: 720px;
-
-                .schedule-content {
-
-
-                    .schedule-content-box {
-                        width: 91.6666666667%;
-                    }
-                }
-
-                .container {
-                    max-width: 720px;
-
-                    .schedule-tab-content {
-                        .row {
-
-
-                            .tab-box {
-                                width: 91.6666666667%;
-
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media (max-width: 576px) {
     .main {
         #schedule {
 
             .container {
                 max-width: 540px;
+                .schedule-content{
+                    .schedule-content-box{
+width: 100%;
+.navBox{
+    nav{
+        .navContent{
+            width: 100%;
+            a{
+                font-size: 16px;
+                margin-right: 25px;
+                padding: 18px 0px;
             }
         }
     }
 }
+                    }
+                }
 
+                .schedule-tab-content {
+                    .row {
+                        .tab-box {
+                            width: 100%;
 
+                            .schedule-wrapper {
+                                padding: 30px 10px;
 
+                                .single-item {
+                                    .item-obtion {
+                                        .left-obtion{
+                                            .job-title{
+                                                a{
+                                                    h4{
+                                                        font-size: 16px;
+                                                    }
 
+                                                }
+                                                p{
+                                                    font-size: 16px;
+                                                }
+                                            }
+                                        }
+                                        .job-time{
+                                            span{
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
